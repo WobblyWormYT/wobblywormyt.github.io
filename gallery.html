@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery – PSquare Art Gallery</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar (same as home) -->
+  <nav class="navbar">
+    <div class="logo">PSquare Art Gallery</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="exhibition.html">Exhibition</a></li>
+      <li><a href="tickets.html">Tickets</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="visit.html">Visit</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-container">
+    <h1>Gallery</h1>
+
+    <input 
+      type="text" 
+      id="searchInput" 
+      placeholder="Search by name or year..." 
+      class="search-box"
+      onkeyup="searchArt()"
+    >
+
+    <div class="gallery-grid" id="galleryGrid">
+
+      <a href="art-details.html?id=1" class="art-card">
+        <img src="images/paintings/mona.jpg">
+        <h3>Mona Lisa</h3>
+        <p>1503</p>
+      </a>
+
+      <a href="art-details.html?id=2" class="art-card">
+        <img src="images/paintings/starry.jpg">
+        <h3>Starry Night</h3>
+        <p>1889</p>
+      </a>
+
+      <a href="art-details.html?id=3" class="art-card">
+        <img src="images/paintings/girl.jpg">
+        <h3>Girl with a Pearl Earring</h3>
+        <p>1665</p>
+      </a>
+
+            <a href="art-details.html?id=4" class="art-card">
+        <img src="images/paintings/maharaj.jpg">
+        <h4>Chhatrapati Shivaji Maharaj</h4>
+        <p>1677</p>
+      </a>
+
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

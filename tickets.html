@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tickets – PSquare Art Gallery</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">PSquare Art Gallery</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="exhibition.html">Exhibition</a></li>
+      <li><a href="tickets.html">Tickets</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="visit.html">Visit</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-container">
+    <h1>Ticket Office</h1>
+    <p>Select ticket type and number of tickets:</p>
+
+    <div class="ticket-box">
+      <label>Adults (₹150)</label>
+      <input type="number" id="adultQty" min="0" value="0">
+
+      <label>Students (₹80)</label>
+      <input type="number" id="studentQty" min="0" value="0">
+
+      <label>Children (₹50)</label>
+      <input type="number" id="childQty" min="0" value="0">
+
+      <button class="btn" onclick="calculateTotal()">Calculate Total</button>
+
+      <h2>Total: ₹<span id="totalPrice">0</span></h2>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
