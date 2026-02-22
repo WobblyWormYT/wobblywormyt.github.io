@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #0f0f0f;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #111;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+
+/* Home Hero */
+.hero {
+  height: 90vh;
+  background: url("../images/hero.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content {
+  background: rgba(0,0,0,0.6);
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 12px 25px;
+  background: #e63946;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #ff4d5a;
+}
+
+/* gallery html*/
+.page-container {
+  padding: 40px;
+}
+
+.search-box {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 15px;
+  margin: 20px 0;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.art-card {
+  background: #1c1c1c;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.art-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.art-card h3 {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.art-card p {
+  padding: 0 10px 10px;
+  color: #aaa;
+}
+
+.art-card:hover {
+  transform: scale(1.03);
+}
+
+/*art details*/
+.details-container {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.details-container img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+}
+
+.details-text {
+  max-width: 500px;
+}
+
+.details-text h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.details-text h3 {
+  color: #aaa;
+  margin-bottom: 15px;
+}
+
+/*TICKETS*/
+.ticket-box {
+  max-width: 400px;
+  background: #1c1c1c;
+  padding: 25px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.ticket-box label {
+  display: block;
+  margin-top: 10px;
+  color: #ccc;
+}
+
+.ticket-box input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.ticket-box h2 {
+  margin-top: 15px;
+}
+
+/* END*/
+.exhibit-card {
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 15px 0;
+}
